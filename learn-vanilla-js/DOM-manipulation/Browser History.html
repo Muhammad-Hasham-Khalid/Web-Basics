@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>History</title>
+  </head>
+  <body>
+    <script>
+      /* History */
+
+      alert(window.history.length);
+
+      // history.back();
+      // history.forward();
+      // history.go(-2);
+
+      history.replaceState(
+        "beau is great",
+        null,
+        "http://codepen.io/Beau_Is_Awesome"
+      );
+      console.log(history.state);
+
+      history.pushState(null, null, "freeCodeCamp");
+    </script>
+  </body>
+</html>

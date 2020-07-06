@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Window Object</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <input type="button" value="Close Window" onclick="newWindowObj.close()" />
+    <input type="button" value="Move Window" onclick="move()" />
+    <a href="http://carnes.cc" target="newWindow">My website.</a>
+    <script>
+      /* Window Object: size, open, close, move */
+
+      window.addEventListener("resize", update);
+      var x = window.document.getElementById("demo");
+      update();
+
+      function update() {
+        x.innerHTML =
+          "Browser inner window width: " +
+          window.innerWidth +
+          ", height: " +
+          window.innerHeight +
+          ".";
+      }
+
+      var newWindowObj = window.open(
+        "https://freecodecamp.com",
+        "newWindow",
+        "menubar=true,location=true,resizable=false,scrollbars=false,width=400,height=300,top=200,left=200"
+      );
+
+      function move() {
+        newWindowObj.moveBy(50, 0);
+        // newWindowObj.moveTo(50, 50);
+        newWindowObj.focus();
+      }
+    </script>
+  </body>
+</html>

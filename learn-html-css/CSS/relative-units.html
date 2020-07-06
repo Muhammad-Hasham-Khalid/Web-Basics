@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            font-size: 100%;
+            /*this is root font size can be referenced when using rem's*/
+        }
+
+        p {
+            font-size: 1.43rem;
+            /*1.43 times root font-size*/
+        }
+
+        body {
+            font-family: sans-serif;
+            margin: 120px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            margin: 0;
+            text-align: center;
+        }
+
+        section {
+            font-size: 64px;
+        }
+
+        h1 {
+            font-size: 1em;
+            /*1em: 1 * parent's font-size (for font-size only)*/
+            /*all tags are set in em by default*/
+        }
+
+        h2 {
+            font-size: .7em;
+        }
+
+        button {
+            width: max-content;
+            display: block;
+            margin: 12px auto 82px;
+            background-color: #222;
+            color: white;
+            /*32 px*/
+            font-size: .5em;
+            border: none;
+            outline: none;
+            padding: .4em 2em;
+            /*for padding 1em is equal to the current tag's font size*/
+        }
+
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>Main Header</h1>
+        <h2>Sub Header</h2>
+        <button type="button" name="button">Click Here</button>
+    </section>
+
+    <h3>Outside of the section tag</h3>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "testing-javascript",
+  "version": "1.0.0",
+  "description": "testing javascript code using jasmine",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "author": "Koders Gang",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jasmine": "^3.5.0",
+    "shelljs": "^0.8.4"
+  }
+}

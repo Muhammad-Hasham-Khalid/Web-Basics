@@ -1,0 +1,19 @@
+#myDiv {
+    padding:10px;
+    width: 300px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    background-color: coral;
+    cursor: pointer;
+}
+
+#myDiv2 {
+    padding:10px;
+    width: 300px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    background-color: coral;
+    cursor: pointer;
+}

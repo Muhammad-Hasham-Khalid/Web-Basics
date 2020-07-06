@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes in CSS</title>
+    <style>
+        section > div.example-div { 
+            /*Here we restricted this styling so that it can only be used for divs who are direct descendents of section*/
+            margin-top : 10px;
+            margin-bottom : 10px;
+            background-color: teal;
+            color: whitesmoke;
+            width: 250px;
+        }
+
+        .example-div > h4.cursive-h4{
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .padding-15 {
+            padding-bottom: 15px;
+            padding-top: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Class is something which many HTML elements can have at a time, so that we can wire up many HTML elements in terms of CSS -->
+
+    <section>
+
+        <div class="example-div padding-15">
+            <h4>
+                I'm in the outer most div.
+            </h4>
+            <div>
+                <h4 class="cursive-h4">
+                    I'm in the inner most div.
+                </h4>
+            </div>
+        </div>
+        <div class="example-div">
+            <h4 class="cursive-h4">
+                I'm in the second div.
+            </h4>
+            <div>
+                <h4>
+                    I'm in the second inner most div.
+                </h4>
+            </div>
+        </div>
+        <div class="example-div padding-15">
+            <h4>
+                I'm in the third div.
+            </h4>
+            <div>
+                <h4>
+                    I'm in the third inner most div.
+                </h4>
+            </div>
+        </div>
+    </section>
+
+    <div class="example-div padding-15">
+        <h4>
+            Some example-div without a section parent
+            <!-- .example-div styling will not be applied here coz we restricted it to direct descendents of <section> -->
+        </h4>
+    </div>
+
+    <h4 class="cursive-h4">
+        A seperate cursive-h4 without .example-div parent
+    </h4>
+
+    <section class="example-div">
+        Hello World!!! this is a section tag so styling will not be applied as we restricted it for div's
+    </section>
+
+</body>
+</html>

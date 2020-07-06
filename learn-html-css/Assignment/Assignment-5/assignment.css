@@ -1,0 +1,59 @@
+body {
+    background-color: rgb(194, 177, 211);
+}
+
+p {
+    font-size: 25px;
+}
+
+li {
+    font-size: 20px;
+}
+
+h1, h2, h3 {
+    padding-bottom: 5%;
+}
+
+.unorder {
+    background-color: cadetblue;
+    list-style-image: url('sq.gif');
+}
+
+.order {
+    background-color: darkolivegreen;
+    color : white;
+    list-style: lower-roman;
+}
+
+h1#bold-underline-h1{
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 300%;
+}
+
+.image {
+    border-radius: 5%;
+    border-style: dashed;
+    border-color: brown;
+    border-width: 5%;
+}
+
+.image:hover {
+    animation: animate 0.5s;
+}
+
+ul#image-list li{
+    display: inline;
+    list-style-type: none;
+    padding-left: 5%;
+}
+
+@keyframes animate {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.5;
+    }
+}

@@ -1,0 +1,157 @@
+.box {
+    font-size: 50px;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 300;
+    box-sizing: border-box;
+    /* width: 33.333333%; */
+    /* width: 300px; */
+
+    /*size before placing it into the container -> controls the size along main axis*/
+    flex-basis: 10%;
+    /* flex-grow: 1; */
+    /* flex-shrink: 1; */
+    /* flex: 3; */
+}
+
+.box-1 {
+    background: red;
+    /* font-size: 1.3em; */
+    /* flex-grow: 1; */
+    flex-shrink: 2;
+}
+
+.box-2 {
+    background: deeppink;
+    /* font-size: 3.3em; */
+    /* flex-grow: 2; */
+}
+
+.box-3 {
+    background: orange;
+    /* font-size: 2.3em; */
+    /* align-self: flex-start; */
+    /* flex-grow: 3; */
+}
+
+.box-4 {
+    background: yellow;
+    /* font-size: 6.3em; */
+    /* flex-grow: 4; */
+}
+
+.box-5 {
+    background: limegreen;
+}
+
+.box-6 {
+    background: green;
+}
+
+.box-7 {
+    background: steelblue;
+}
+
+.box-8 {
+    background: blue;
+}
+
+.box-9 {
+    background: blueviolet;
+}
+
+/*Flex box styling*/
+.container {
+    /*to make the container a flex box*/
+    display: flex;
+    border: 8px solid black;
+    height: 80vh;
+
+    /*to specify direction of flex*/
+    flex-direction: row;
+    /* flex-direction: column; */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column-reverse; */
+
+    /*for wrapping content*/
+    /* flex-wrap: wrap; */
+    /* flex-wrap: wrap-reverse; */
+
+    /*Exercise-1 values*/
+    /* flex-direction: row-reverse;
+    flex-wrap: wrap; */
+
+    /*justify content -> for main axis*/
+    /*to the end of the main axis*/
+    /* justify-content: flex-end; */
+
+    /*to the start of the main axis*/
+    /* justify-content: flex-start; */
+
+    /*center of main axis*/
+    /* justify-content: center; */
+
+    /*space goes evenly between the elements*/
+    justify-content: space-between;
+
+    /*space around the elements*/
+    /* justify-content: space-around; */
+
+    /*Exercise-2 values*/
+    /* flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center; */
+
+    /*align items -> for cross axis*/
+    /*stretch all over the place - default value*/
+    /* align-items: stretch; */
+
+    /*starting of cross axis*/
+    /* align-items: flex-start; */
+
+    /*ending of cross axis*/
+    /* align-items: flex-end; */
+
+    /*center of cross axis*/
+    align-items: center;
+
+    /*aligned on the basis of the baseline of their text*/
+    /* align-items: baseline; */
+
+    /*Exercise-3 values*/
+    /* flex-direction: column;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    /* align-items: center;  */
+
+    /*align-content*/
+    /*starting of the cross axis*/
+    /* align-content: flex-start; */
+
+    /*end of the cross axis*/
+    /* align-content: flex-end; */
+
+    /*center of cross axis*/
+    /* align-content: center; */
+
+    /*space between the rows/columns*/
+    /* align-content: space-between; */
+
+    /*space around the rows/columns*/
+    /* align-content: space-around; */
+
+    /*Exercise-4 values*/
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+}
+
+/* Exercise-3 values */
+/* .box {
+    flex-basis: 50%;
+}
+
+.box:nth-child(3n) {
+    flex-basis: 100%;
+} */

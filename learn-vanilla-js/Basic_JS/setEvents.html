@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="clearInterval(intId)">Stop time</button>
+    <script>
+        /* setTimeout and setInterval */
+
+        // setTimeout
+        var timeoutID = setTimeout(bye, 3000);
+
+        console.log('hello');
+
+        clearTimeout(timeoutID);
+
+        function bye() {
+            console.log('goodbye');
+        }
+
+
+        // setInterval
+
+        var count = 0
+        var intId = setInterval(counter, 1000);
+
+        function counter() {
+            console.log(++count);
+        }
+    </script>
+</body>
+
+</html>

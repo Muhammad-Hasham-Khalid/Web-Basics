@@ -1,0 +1,86 @@
+body {
+    background-color: lightblue;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    height: 50px;
+    background-color: teal;
+    width: 100%;
+    line-height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex; /* flex box property */
+    /*justify-content: center;*/
+    /* justify-content: space-around; */ 
+    /* space-between */
+    margin-top: 0;
+}
+
+nav ul li {
+    /*margin: 0 10px;*/
+    /*4 values = goes clockwise top->right->bottom->left*/
+    /*2 values = top+bottom left+right*/
+    /*1 value  = same for all*/ 
+    background-color: burlywood;
+    font-size: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 0 10px;
+}
+
+nav li:hover{
+    background-color: chocolate;
+}
+
+#intro {
+    text-align: center;
+}
+
+main article {
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: center;
+    margin: 20px;
+}
+
+#blog-text {
+    width: 50%;
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+#blog-text p:first-child {
+    margin-bottom: 50px;
+}
+
+.card {
+    width: 500px;
+    background-color: #fff;
+    border-radius: 5%;
+    padding-bottom: 2px;
+}
+
+.card h4{
+    text-align: center;
+}
+
+.card li {
+    font-size: 18px;
+}
+
+#lower-image {
+    text-align: center;
+}
+
+#lower-image img {
+    height: 300px;
+}

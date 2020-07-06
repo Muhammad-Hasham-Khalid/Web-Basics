@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes</title>
+    <style>
+        body{
+            margin: 120px 220px 0;
+        }
+        body, input{
+            font-family: sans-serif;
+        }
+        .color{
+            color: #E8461A;
+        }
+        h1, input{
+            font-family: sans-serif;
+            font-weight: normal;
+            font-size: 64px;
+        }
+        p{
+            font-family: serif;
+            width: 1000px;
+            line-height: 30px;
+            font-size: 19px;
+            letter-spacing: 2px;
+        }
+        input
+        {
+            border: none;
+            border-bottom: 1px solid;
+            outline: none;
+            font-size: 40px;
+            padding: 4px 20px;
+            margin-top: 38px;
+        }
+        ::placeholder{
+            color: inherit;
+        }
+        @keyframes fade-in-1{
+            0%{
+                opacity: 0;
+                transform: translate(-1600px);
+            }
+            90%{
+                opacity: 1;
+            }
+            100%{
+                transform: translate(0) rotate(.3deg);
+            }
+        }
+
+        .fade-in-1{
+            animation: fade-in-1 .6s 2s;
+            animation-fill-mode: both;
+        }
+
+        @keyframes fade-in-2 {
+            0%{
+                transform: skew(75deg);
+                opacity: 0;
+            }
+            30%{
+                opacity: .8;
+                transform: skew(0);
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+        .fade-in-2{
+            animation: fade-in-2 2.6s 1s;
+            animation-fill-mode: backwards;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="color fade-in-1">Keyframe animations are great!!</h1>
+    <p class="color fade-in-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime alias beatae sapiente numquam error voluptatem dolores corporis, natus quibusdam culpa recusandae voluptas quos perspiciatis repudiandae.</p>
+    <form action="index.html" class="pop-in" method="POST">
+        <input type="text" class="color" placeholder="Search...">
+    </form>
+</body>
+</html>

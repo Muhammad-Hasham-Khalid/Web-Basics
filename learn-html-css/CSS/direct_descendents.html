@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pirple Intermediate CSS</title>
+    <style>
+        /*
+        > sign grabs only the direct children (descendents) elements 
+        */
+        section > div > h4 {
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    
+    <section>
+        <div>
+            <h4>
+                I'm in the outer most div.
+            </h4>
+            <div>
+                <h4>
+                    I'm in the inner most div.
+                </h4>
+            </div>
+        </div>
+        <div>
+            <h4>
+                I'm in the second div.
+            </h4>
+            <div>
+                <h4>
+                    I'm in the second inner most div.
+                </h4>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

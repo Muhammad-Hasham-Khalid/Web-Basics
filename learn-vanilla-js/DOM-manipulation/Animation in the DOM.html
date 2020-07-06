@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation in the DOM</title>
+    <style>
+      body {
+        background: PeachPuff;
+      }
+
+      #myContainer {
+        width: 400px;
+        height: 400px;
+        position: relative;
+        background: DarkSeaGreen;
+      }
+      #myAnimation {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        background-color: Maroon;
+      }
+
+      #item {
+        background: blue;
+        position: absolute;
+        height: 75px;
+        width: 200px;
+        margin: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      <button onclick="myMove()">Click Me</button>
+    </p>
+
+    <div id="myContainer">
+      <div id="myAnimation"></div>
+      <div id="item"></div>
+    </div>
+    <script>
+      /* Animation */
+
+      function myMove() {
+        var elem = document.getElementById("myAnimation");
+        var pos = 0;
+        var id = setInterval(frame, 10);
+        function frame() {
+          if (pos == 350) {
+            clearInterval(id);
+          } else {
+            pos++;
+            elem.style.top = pos + "px";
+            elem.style.left = pos + "px";
+          }
+        }
+      }
+
+      var item = document.getElementById("item");
+      item.animate(
+        [
+          { transform: "scale(1)", background: "red", opacity: 1, offset: 0 },
+          {
+            transform: "scale(.5) rotate(270deg)",
+            background: "blue",
+            opacity: 0.5,
+            offset: 0.2,
+          },
+          {
+            transform: "scale(1) rotate(0deg)",
+            background: "red",
+            opacity: 1,
+            offset: 1,
+          },
+        ],
+        {
+          duration: 2000, //milliseconds
+          easing: "ease-in-out", //'linear', a bezier curve, etc.
+          delay: 10, //milliseconds
+          iterations: Infinity, //or a number
+          direction: "alternate", //'normal', 'reverse', etc.
+          fill: "forwards", //'backwards', 'both', 'none', 'auto'
+        }
+      );
+    </script>
+  </body>
+</html>

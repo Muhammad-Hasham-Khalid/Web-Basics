@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cookies, Local Storage, Session Storage</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center">Cookies vs. Local Storage vs. Session Storage</h1>
+      <table class="table table-striped">
+        <thead class="thead-inverse">
+          <tr>
+            <th></th>
+            <th>Cookies</th>
+            <th>Local Storage</th>
+            <th>Session Storage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Capacity</th>
+            <td>4kb</td>
+            <td>10mb</td>
+            <td>5mb</td>
+          </tr>
+          <tr>
+            <th scope="row">Browsers</th>
+            <td>HTML4 / HTML 5</td>
+            <td>HTML 5</td>
+            <td>HTML 5</td>
+          </tr>
+          <tr>
+            <th scope="row">Accessible from</th>
+            <td>Any window</td>
+            <td>Any window</td>
+            <td>Same tab</td>
+          </tr>
+          <tr>
+            <th scope="row">Expires</th>
+            <td>Manually set</td>
+            <td>Never</td>
+            <td>On tab close</td>
+          </tr>
+          <tr>
+            <th scope="row">Storage Location</th>
+            <td>Browser and server</td>
+            <td>Browser only</td>
+            <td>Browser only</td>
+          </tr>
+          <tr>
+            <th scope="row">Sent with requests</th>
+            <td>Yes</td>
+            <td>No</td>
+            <td>No</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

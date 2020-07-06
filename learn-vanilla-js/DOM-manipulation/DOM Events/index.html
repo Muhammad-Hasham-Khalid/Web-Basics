@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body onload="checkCookies()">
+    <h1 style="cursor:pointer" onclick="this.innerHTML='Fine!!😃'">Hey, how are you???</h1>
+    <h1 style="cursor: pointer;" onclick="changeColor(this)">
+        Click to change color!!
+    </h1>
+    <br>
+    <button id="myBtn">
+        Click Me!!!
+    </button>
+    <br><br>
+    <input type="text" id="words" oninput="removeLetterFromH1()">
+    <br><br>
+    <div style="cursor: not-allowed;" onmouseover="mOver(this)" onmouseout="mOut(this)" class="box">
+        Mouse Over me.
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

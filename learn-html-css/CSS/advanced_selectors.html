@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+
+        #example p:first-child {
+            color: firebrick;
+        }
+
+        #example p:nth-last-child(2) /*referrring to 2nd last child*/ {
+            color: green;
+        }
+        
+        @keyframes animate {
+            to {
+                transform: scale(1.3);
+            }
+        }
+
+        #test:hover {
+            opacity: 0.5;
+            animation: animate 2s;
+        }
+
+        #example p+p /*selecting a <p> tag that is next to a <p> tag*/{
+            background-color: indianred;
+        }
+    </style>
+</head>
+<body>
+    <div id="example" class="example-div">
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea recusandae id eum velit atque itaque laborum iste, nobis earum ullam provident ab ipsam ipsa adipisci aliquam sint fugiat. Numquam, voluptatum?
+    </p>
+    <h3>Hello I am H3 element</h3>
+    <h4>Hello I am H4 here!</h4>
+    <p>
+        Lorem ipsum dolor sit amet.
+    </p>
+    <p>
+        Some text here blah blah blah
+    </p>
+    <p>
+        Another p after p :::: LOL :D
+    </p>
+    </div>
+    <img id="test" src="https://images.pexels.com/photos/3876394/pexels-photo-3876394.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="image">
+</body>
+</html>

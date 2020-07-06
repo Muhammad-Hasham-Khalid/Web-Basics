@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(194, 177, 211);
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    font-size: large;
+}
+
+li {
+    font-size: large;
+}
+
+h1,
+h2,
+h3 {
+    padding-bottom: 5%;
+}
+
+img {
+    width: 60%;
+    height: auto;
+}

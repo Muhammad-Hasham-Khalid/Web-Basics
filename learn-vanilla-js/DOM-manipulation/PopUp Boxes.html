@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pop Ups</title>
+  </head>
+  <body>
+    <script>
+      /* Pop ups */
+
+      alert("I am an alert box!");
+
+      if (window.confirm("Press a button!")) {
+        console.log("You pressed OK!");
+      } else {
+        console.log("You pressed Cancel!");
+      }
+
+      var person = prompt("Please enter your name", "Beau Carnes");
+
+      if (person == null || person == "") {
+        console.log("User cancelled the prompt.");
+      } else {
+        console.log("Hello " + person + "! How are you today?");
+      }
+    </script>
+  </body>
+</html>

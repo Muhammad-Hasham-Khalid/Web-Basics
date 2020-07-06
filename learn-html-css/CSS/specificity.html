@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+        body > div {
+            background-color: yellow;
+            width: 500px;
+            height: 300px;
+            padding-left: 100px;
+        }
+        .example-div {
+            background-color: orange;
+            padding-left: 0px;
+        }
+        /*classes are more specific than these generic type selectors*/
+        #example {
+            background-color: red;
+            padding-left: 200px;
+        }
+        /*id's are the most specific*/
+    </style>
+</head>
+<body>
+    <div id="example" class="example-div">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea recusandae id eum velit atque itaque laborum iste, nobis earum ullam provident ab ipsam ipsa adipisci aliquam sint fugiat. Numquam, voluptatum?
+    </div>
+</body>
+</html>
