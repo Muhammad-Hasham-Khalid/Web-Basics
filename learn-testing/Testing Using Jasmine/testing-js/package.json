@@ -9,7 +9,7 @@
   "author": "Koders Gang",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "jasmine": "^3.5.0",
     "shelljs": "^0.8.5"
   }
